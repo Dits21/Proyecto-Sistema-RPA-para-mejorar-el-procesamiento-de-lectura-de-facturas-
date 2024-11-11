@@ -1,0 +1,93 @@
+{
+  "version": "2.0",
+  "resources": [
+    {
+      "resource": "queue",
+      "value": {
+        "name": {
+          "defaultValue": "in_Config(\"OrchestratorQueueName\").ToString",
+          "isExpression": true
+        },
+        "folderPath": {
+          "defaultValue": "in_Config(\"OrchestratorQueueFolder\").ToString",
+          "isExpression": true
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "asset",
+      "value": {
+        "name": {
+          "defaultValue": "row(\"Asset\").ToString",
+          "isExpression": true
+        },
+        "folderPath": {
+          "defaultValue": "row(\"OrchestratorAssetFolder\").ToString",
+          "isExpression": true
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "asset",
+      "value": {
+        "name": {
+          "defaultValue": "in_Config(\"apiKeyAzure\").ToString",
+          "isExpression": true
+        },
+        "folderPath": {
+          "defaultValue": "in_Config(\"OrchestratorAssetFolder\").ToString",
+          "isExpression": true
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "queue",
+      "value": {
+        "folderPath": {
+          "defaultValue": "in_Config(\"OrchestratorQueueFolder\").ToString",
+          "isExpression": true
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "asset",
+      "value": {
+        "name": {
+          "defaultValue": "In_StrClainScapeCredentials",
+          "isExpression": true
+        },
+        "folderPath": {
+          "defaultValue": "in_OrquestadorFolder",
+          "isExpression": true
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "queue",
+      "value": {
+        "folderPath": {
+          "isExpression": true
+        }
+      },
+      "metadata": {}
+    },
+    {
+      "resource": "Connection",
+      "key": "uipath-microsoft-onedrive",
+      "value": {
+        "ConnectionId": {
+          "isExpression": true
+        }
+      },
+      "metadata": {
+        "UseConnectionService": "False",
+        "Connector": "uipath-microsoft-onedrive"
+      }
+    }
+  ]
+}

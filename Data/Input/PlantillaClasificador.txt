@@ -1,0 +1,1 @@
+"outputpath" "Imagepath" "C:\Users\MartinCoronado\Documents\UiPath\extraccion-de-data-de-formularios-nubc-de-reclamos-de-salud2\Clasificador_WWM_TipoDoc\Clasificador_WWM_TipoDoc\WWM_ML_TipoDocumentos.zip" "Label" "ImageSource"

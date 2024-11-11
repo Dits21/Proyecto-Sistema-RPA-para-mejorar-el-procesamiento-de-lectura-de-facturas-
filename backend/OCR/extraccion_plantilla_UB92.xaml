@@ -1,0 +1,238 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="extraccion_de_data" this:extraccion_de_data.in_strPlantillaRuta="Data\Input\UB92.jpg" this:extraccion_de_data.in_strRutaPDFUB92="D:\WorldWideMEdical\BHS783802300101.pdf" this:extraccion_de_data.in_strCoordenadasUb92="{}{'datos clientes':{'Billing provider':['25','28','397','48'],'Signature':['399','27','769','47'],'Pacient Account':['814','27','1173','46'],'Federal Tax':['772','100','923','122'],'Pacient Name':['35','151','468','172'],'Insured ID':['458','1152','759','1174'],'Diagnosis A':['44','1326','141','1349'],'Diagnosis B':['149','1326','263','1349'],'Diagnosis C':['269','1327','384','1350'],'Diagnosis D':['390','1328','504','1349'],'type of bill':['1176','50','1249','72'],'Cargo Total':['922','1004','1071','1026']},'cargo1':{'Fecha':['693','454','796','477'],'REV CD':['22','455','94','478'],'CPT/HCPCS':['468','454','690','478'],'Days Or Units':['798','454','918','477'],'cargo':['918','453','1068','476']},'cargo2':{'2Fecha':['693','478','796','501'],'2REV CD':['22','479','94','504'],'2CPT/HCPCS':['468','479','690','503'],'2Days Or Units':['798','478','918','502'],'2cargo':['918','477','1068','500']},'cargo3':{'3Fecha':['693','502','796','525'],'3REV CD':['22','504','94','528'],'3CPT/HCPCS':['468','504','690','528'],'3Days Or Units':['798','502','918','525'],'3cargo':['918','501','1068','524']},'cargo4':{'4Fecha':['693','526','796','549'],'4REV CD':['22','529','94','553'],'4CPT/HCPCS':['468','529','690','553'],'4Days Or Units':['798','526','918','549'],'4cargo':['918','525','1068','548']},'cargo5':{'5Fecha':['693','550','796','573'],'5REV CD':['22','554','94','578'],'5CPT/HCPCS':['468','554','690','578'],'5Days Or Units':['798','550','918','573'],'5cargo':['918','549','1068','572']},'cargo6':{'6Fecha':['693','574','796','597'],'6REV CD':['22','579','94','603'],'6CPT/HCPCS':['468','579','690','603'],'6Days Or Units':['798','574','918','597'],'6cargo':['918','573','1068','596']},'cargo7':{'7Fecha':['693','598','796','621'],'7REV CD':['22','604','94','628'],'7CPT/HCPCS':['468','604','690','628'],'7Days Or Units':['798','598','918','621'],'7cargo':['918','597','1068','620']},'cargo8':{'8Fecha':['693','622','796','645'],'8REV CD':['22','629','94','653'],'8CPT/HCPCS':['468','629','690','653'],'8Days Or Units':['798','622','918','645'],'8cargo':['918','645','1068','668']},'cargo9':{'9Fecha':['693','646','796','669'],'9REV CD':['22','654','94','678'],'9CPT/HCPCS':['468','654','690','678'],'9Days Or Units':['798','646','918','669'],'9cargo':['918','645','1068','668']},'cargo10':{'10Fecha':['693','670','796','693'],'10REV CD':['22','679','94','703'],'10CPT/HCPCS':['468','679','690','703'],'10Days Or Units':['798','670','918','693'],'10cargo':['918','669','1068','692']},'cargo11':{'11Fecha':['693','694','796','717'],'11REV CD':['22','704','94','728'],'11CPT/HCPCS':['468','704','690','728'],'11Days Or Units':['798','694','918','717'],'11cargo':['918','693','1068','716']},'cargo12':{'12Fecha':['693','718','796','741'],'12REV CD':['22','729','94','753'],'12CPT/HCPCS':['468','729','690','753'],'12Days Or Units':['798','718','918','741'],'12cargo':['918','717','1068','740']},'cargo13':{'13Fecha':['693','742','796','765'],'13REV CD':['22','754','94','778'],'13CPT/HCPCS':['468','754','690','778'],'13Days Or Units':['798','742','918','765'],'13cargo':['918','741','1068','764']},'cargo14':{'14Fecha':['693','766','796','789'],'14REV CD':['22','779','94','803'],'14CPT/HCPCS':['468','779','690','803'],'14Days Or Units':['798','766','918','789'],'14cargo':['918','765','1068','788']},'cargo15':{'15Fecha':['693','790','796','813'],'15REV CD':['22','804','94','828'],'15CPT/HCPCS':['468','804','690','828'],'15Days Or Units':['798','790','918','813'],'15cargo':['918','789','1068','812']},'cargo16':{'16Fecha':['693','814','796','837'],'16REV CD':['22','829','94','853'],'16CPT/HCPCS':['468','829','690','853'],'16Days Or Units':['798','814','918','837'],'16cargo':['918','813','1068','836']},'cargo17':{'17Fecha':['693','838','796','861'],'17REV CD':['22','854','94','878'],'17CPT/HCPCS':['468','854','690','878'],'17Days Or Units':['798','838','918','861'],'17cargo':['918','837','1068','860']},'cargo18':{'18Fecha':['693','862','796','885'],'18REV CD':['22','879','94','903'],'18CPT/HCPCS':['468','879','690','903'],'18Days Or Units':['798','862','918','885'],'18cargo':['918','861','1068','884']},'cargo19':{'19Fecha':['693','886','796','909'],'19REV CD':['22','904','94','928'],'19CPT/HCPCS':['468','904','690','928'],'19Days Or Units':['798','886','918','909'],'19cargo':['918','885','1068','908']},'cargo20':{'20Fecha':['693','910','796','933'],'20REV CD':['22','929','94','953'],'20CPT/HCPCS':['468','929','690','953'],'20Days Or Units':['798','910','918','933'],'20cargo':['918','909','1068','932']},'cargo21':{'21Fecha':['693','934','796','957'],'21REV CD':['22','954','94','978'],'21CPT/HCPCS':['468','954','690','978'],'21Days Or Units':['798','934','918','957'],'21cargo':['918','933','1068','956']},'cargo22':{'22Fecha':['693','958','796','981'],'22REV CD':['22','979','94','1003'],'22CPT/HCPCS':['468','979','690','1003'],'22Days Or Units':['798','958','918','981'],'22cargo':['918','957','1068','980']}}" this:extraccion_de_data.in_strAzureHost="https://softboticocr.cognitiveservices.azure.com/" this:extraccion_de_data.in_strApiKey="626f3061b4604e2a94db3795c57034d4" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:j="clr-namespace:JsonDataConversion;assembly=JsonDataConversion" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:sia="clr-namespace:Softbotic.ImageAligner.Activities;assembly=Softbotic.ImageAligner.Activities" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property sap2010:Annotation.AnnotationText="Ruta donde esta la plantilla que es usada para la extraccion de datos de la factura con la actividad de extracion OCR" Name="in_strPlantillaRuta" Type="InArgument(x:String)" />
+    <x:Property Name="in_strRutaPDFUB92" Type="InArgument(x:String)" />
+    <x:Property Name="out_dtUb92" Type="OutArgument(sd:DataTable)" />
+    <x:Property Name="in_strCoordenadasUb92" Type="InArgument(x:String)" />
+    <x:Property Name="in_strRutaTemporal" Type="InArgument(x:String)" />
+    <x:Property Name="in_strAzureHost" Type="InArgument(x:String)" />
+    <x:Property Name="out_intNumeroDePaginas" Type="OutArgument(x:Int32)" />
+    <x:Property Name="in_strFacturaAlineadaUB92" Type="InArgument(x:String)" />
+    <x:Property Name="in_strApiKey" Type="InArgument(x:String)" />
+    <x:Property Name="in_strRutaJson" Type="InArgument(x:String)" />
+    <x:Property Name="Page" Type="InArgument(x:Int32)" />
+    <x:Property Name="JsonCoord" Type="InArgument(x:String)" />
+    <x:Property Name="JsonExtraccionData" Type="InArgument(x:String)" />
+    <x:Property Name="JsonOCR" Type="InArgument(x:String)" />
+    <x:Property Name="strImagenFInal" Type="InOutArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1065,3026</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>extraccion_de_data_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="82">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>Softbotic.ImageAligner.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.PDF.Activities.PDF</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>JsonDataConversion</x:String>
+      <x:String>NovigoSolutions.TransposeDataTable.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="76">
+      <AssemblyReference>JsonDataConversion</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>NovigoSolutions.TransposeDataTable.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>Softbotic.ImageAligner.Activities</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.Entity</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="554,2961" sap2010:WorkflowViewState.IdRef="Sequence_27">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="strFacturaAlineada" />
+      <Variable x:TypeArguments="x:Boolean" Name="boolAlineado" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="506,122" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;extraccion plantilla UB92 por ocr&quot;]" />
+    <Assign sap:VirtualizedContainerService.HintSize="506,88" sap2010:WorkflowViewState.IdRef="Assign_15">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[strFacturaAlineada]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[in_strFacturaAlineadaUB92]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke AlineadorDeFactura workflow" sap:VirtualizedContainerService.HintSize="506,118" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Machine learning\AlineadorDeFactura.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_strFacturaUB92Alineada">[strImagenFInal]</OutArgument>
+        <OutArgument x:TypeArguments="x:Boolean" x:Key="out_boolFormatoUB92">[boolAlineado]</OutArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_strRutaFactura">[in_strRutaPDFUB92]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_strTempFacturas">[in_strRutaTemporal]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_strPlantillas">[in_strPlantillaRuta]</InArgument>
+        <InArgument x:TypeArguments="x:Int32" x:Key="Page">[Page]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <Sequence DisplayName="extraccion_de_data" sap:VirtualizedContainerService.HintSize="506,2317" sap2010:WorkflowViewState.IdRef="Sequence_26">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="s:Byte[]" Name="arrbyteImagen" />
+        <Variable x:TypeArguments="x:String" Name="strBase64Imagen" />
+        <Variable x:TypeArguments="x:String" Name="strResultJson" />
+        <Variable x:TypeArguments="x:String" Name="strJsonDatosExtraidos" />
+        <Variable x:TypeArguments="x:String" Name="strJsonCoordenadasDeExtraccion" />
+        <Variable x:TypeArguments="x:String" Name="strPDFaJPGF" />
+        <Variable x:TypeArguments="sd:DataTable" Default="[new DataTable]" Name="dtUB92" />
+        <Variable x:TypeArguments="x:String" Name="strRutaJsonCrudo" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap:VirtualizedContainerService.HintSize="458,88" sap2010:WorkflowViewState.IdRef="Assign_20">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:Byte[]">[arrbyteImagen]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:Byte[]">[file.ReadAllBytes(strImagenFInal)]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="458,88" sap2010:WorkflowViewState.IdRef="Assign_10">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[strBase64Imagen]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[convert.ToBase64String(arrbyteImagen)]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="458,687" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3" RetryInterval="00:00:15">
+        <ui:RetryScope.ActivityBody>
+          <ActivityAction>
+            <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,502" sap2010:WorkflowViewState.IdRef="Sequence_28">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <sia:AzureOCR ContinueOnError="{x:Null}" sap:VirtualizedContainerService.HintSize="368,408" Host="[in_strAzureHost]" sap2010:WorkflowViewState.IdRef="AzureOCR_2" Image="[strBase64Imagen]" Language="es" Model="latest" Output="[strResultJson]" Pages="1" ReadingOrder="basic" SubscriptionKey="[in_strApiKey]" />
+            </Sequence>
+          </ActivityAction>
+        </ui:RetryScope.ActivityBody>
+        <ui:RetryScope.Condition>
+          <ActivityFunc x:TypeArguments="x:Boolean" />
+        </ui:RetryScope.Condition>
+      </ui:RetryScope>
+      <Assign sap:VirtualizedContainerService.HintSize="418,60" sap2010:WorkflowViewState.IdRef="Assign_11">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[strJsonCoordenadasDeExtraccion]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[in_strCoordenadasUb92]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke AjusteJsonUB92 workflow" sap:VirtualizedContainerService.HintSize="418,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="backend\OCR\AjusteJsonUB92.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="in_strJSON">[strResultJson]</InArgument>
+          <InOutArgument x:TypeArguments="x:String" x:Key="JsonCoord">[strJsonCoordenadasDeExtraccion]</InOutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <sia:ExtractTextAzure ContinueOnError="{x:Null}" sap:VirtualizedContainerService.HintSize="418,132" sap2010:WorkflowViewState.IdRef="ExtractTextAzure_2" JsonOCR="[strResultJson]" JsonOutput="[strJsonDatosExtraidos]" JsonTemplate="[strJsonCoordenadasDeExtraccion]" />
+      <Assign sap:VirtualizedContainerService.HintSize="418,60" sap2010:WorkflowViewState.IdRef="Assign_18">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[strRutaJsonCrudo]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[JsonOCR+path.GetFileNameWithoutExtension(in_strRutaPDFUB92)+"page"+Page.ToString+"ub92ocr.json"]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[JsonExtraccionData+path.GetFileNameWithoutExtension(in_strRutaPDFUB92)+&quot;Page&quot;+Page.ToString+&quot;extraccion.txt&quot;]" sap:VirtualizedContainerService.HintSize="418,132" sap2010:WorkflowViewState.IdRef="WriteTextFile_6" Text="[strJsonDatosExtraidos]" />
+      <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[JsonCoord+path.GetFileNameWithoutExtension(in_strRutaPDFUB92)+&quot;Page&quot;+Page.ToString+&quot;CoordExtraccion.txt&quot;]" sap:VirtualizedContainerService.HintSize="418,132" sap2010:WorkflowViewState.IdRef="WriteTextFile_7" Text="[strJsonCoordenadasDeExtraccion]" />
+      <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[strRutaJsonCrudo]" sap:VirtualizedContainerService.HintSize="418,132" sap2010:WorkflowViewState.IdRef="WriteTextFile_5" Text="[strResultJson]" />
+      <j:JsonToDataTable InputJsonFilePath="{x:Null}" DisplayName="Json to data table" sap:VirtualizedContainerService.HintSize="418,185" sap2010:WorkflowViewState.IdRef="JsonToDataTable_2" InputJsonString="[strJsonDatosExtraidos]" OutputDataTable="[dtUB92]" />
+      <Assign sap:VirtualizedContainerService.HintSize="418,60" sap2010:WorkflowViewState.IdRef="Assign_19">
+        <Assign.To>
+          <OutArgument x:TypeArguments="sd:DataTable">[out_dtUb92]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="sd:DataTable">[dtUB92.Copy]</InArgument>
+        </Assign.Value>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Assign>
+    </Sequence>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="460,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;se finalizo la extraccion correctamente&quot;]" />
+  </Sequence>
+</Activity>
