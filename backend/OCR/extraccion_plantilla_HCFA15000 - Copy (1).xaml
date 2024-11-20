@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
 <Activity mc:Ignorable="sap sap2010" x:Class="extraccion_de_data" this:extraccion_de_data.in_strRutaPDFCMS1500="B:\WWM\onedrive\nuevas\P80105418000.pdf" this:extraccion_de_data.in_strCoordenadascms1500="{}{'datos clientes':{'Billing provider':['860','1543','1309','1567'],'Signature':['128','1586','449','1618'],'Pacient Account':['453','1490','671','1523'],'Federal Tax':['126','1490','361','1523'],'Pacient Name':['126','343','553','372'],'Insured ID':['859','293','1050','324'],'Diagnosis A':['158','1045','260','1070'],'Diagnosis B':['352','1045','454','1070'],'Diagnosis C':['550','1045','649','1070'],'Diagnosis D':['743','1055','848','1075'],'Cargo Total':['860','1493','1025','1521']},'cargo1':{'Fecha desde':['127','1994','252','1221'],'Fecha hasta':['258','1994','388','1221'],'Place of service':['390','1994','436','1221'],'CPT/HCPCS':['483','1994','591','1221'],'Modifier1':['594','1994','644','1221'],'Modifier2':['647','1994','689','1221'],'Modifier3':['691','1994','734','1221'],'Modifier4':['736','1994','779','1221'],'Days Or Units':['992','1994','1049','1221'],'cargo':['860','1994','988','1221']},'cargo2':{'2Fecha desde':['127','1245','252','1272'],'2Fecha hasta':['258','1245','388','1272'],'2Place of service':['390','1245','436','1272'],'2CPT/HCPCS':['483','1245','591','1272'],'2Modifier1':['594','1245','644','1272'],'2Modifier2':['647','1245','689','1272'],'2Modifier3':['691','1245','734','1272'],'2Modifier4':['736','1245','779','1272'],'2Days Or Units':['992','1245','1049','1272'],'2cargo':['860','1245','988','1272']},'cargo3':{'3Fecha desde':['127','1294','252','1319'],'3Fecha hasta':['258','1294','388','1319'],'3Place of service':['390','1294','436','1319'],'3CPT/HCPCS':['483','1294','591','1319'],'3Modifier1':['594','1294','644','1319'],'3Modifier2':['647','1294','689','1319'],'3Modifier3':['691','1294','734','1319'],'3Modifier4':['736','1294','779','1319'],'3Days Or Units':['992','1294','1049','1319'],'3cargo':['860','1294','988','1319']},'cargo4':{'4Fecha desde':['127','1346','252','1370'],'4Fecha hasta':['258','1346','388','1370'],'4Place of service':['390','1346','436','1370'],'4CPT/HCPCS':['483','1346','591','1370'],'4Modifier1':['594','1346','644','1370'],'4Modifier2':['647','1346','689','1370'],'4Modifier3':['691','1346','734','1370'],'4Modifier4':['736','1346','779','1370'],'4Days Or Units':['992','1346','1049','1370'],'4cargo':['860','1346','988','1370']},'cargo5':{'5Fecha desde':['127','1396','252','1418'],'5Fecha hasta':['258','1396','388','1418'],'5Place of service':['390','1396','436','1418'],'5CPT/HCPCS':['483','1396','591','1418'],'5Modifier1':['594','1396','644','1418'],'5Modifier2':['647','1396','689','1418'],'5Modifier3':['691','1396','734','1418'],'5Modifier4':['736','1396','779','1418'],'5Days Or Units':['992','1396','1049','1418'],'5cargo':['860','1396','988','1418']},'cargo6':{'6Fecha desde':['127','1445','252','1469'],'6Fecha hasta':['258','1445','388','1469'],'6Place of service':['390','1445','436','1469'],'6CPT/HCPCS':['483','1445','591','1469'],'6Modifier1':['594','1445','644','1469'],'6Modifier2':['647','1445','689','1469'],'6Modifier3':['691','1445','734','1469'],'6Modifier4':['736','1445','779','1469'],'6Days Or Units':['991','1445','1048','1469'],'6cargo':['860','1445','988','1469']}}" this:extraccion_de_data.in_strRutaTemporal="B:\temp facturas\" this:extraccion_de_data.in_strCoordenadascms1500v2="{}{'datos clientes':{'Billing provider':['867','1547','1310','1576'],'Signature':['126','1570','449','1610'],'Pacient Account':['450','1490','696','1526'],'Federal Tax':['126','1491','350','1525'],'Pacient Name':['126','334','550','370'],'Insured ID':['850','289','1050','314'],'Diagnosis A':['158','1045','260','1070'],'Diagnosis B':['352','1045','454','1070'],'Diagnosis C':['550','1045','649','1070'],'Diagnosis D':['743','1055','848','1075'],'Cargo Total':['867','1493','1025','1521']},'cargo1':{'Fecha desde':['125','1215','252','1239'],'Fecha hasta':['258','1215','388','1239'],'Place of service':['393','1215','438','1239'],'CPT/HCPCS':['490','1215','594','1239'],'Modifier1':['599','1215','648','1239'],'Modifier2':['652','1215','691','1239'],'Modifier3':['697','1215','736','1239'],'Modifier4':['743','1215','785','1239'],'Days Or Units':['999','1215','1056','1239'],'cargo':['867','1215','994','1239']},'cargo2':{'2Fecha desde':['125','1264','252','1285'],'2Fecha hasta':['258','1264','388','1285'],'2Place of service':['393','1264','438','1285'],'2CPT/HCPCS':['490','1264','594','1285'],'2Modifier1':['599','1264','648','1285'],'2Modifier2':['652','1264','691','1285'],'2Modifier3':['697','1264','736','1285'],'2Modifier4':['743','1264','785','1285'],'2Days Or Units':['999','1264','1056','1285'],'2cargo':['867','1264','994','1285']},'cargo3':{'3Fecha desde':['125','1311','252','1333'],'3Fecha hasta':['258','1311','388','1333'],'3Place of service':['393','1311','438','1333'],'3CPT/HCPCS':['490','1311','594','1333'],'3Modifier1':['599','1311','648','1333'],'3Modifier2':['652','1311','691','1333'],'3Modifier3':['697','1311','736','1333'],'3Modifier4':['743','1311','785','1333'],'3Days Or Units':['999','1311','1056','1333'],'3cargo':['867','1311','994','1333']},'cargo4':{'4Fecha desde':['125','1358','252','1381'],'4Fecha hasta':['258','1358','388','1381'],'4Place of service':['393','1358','438','1381'],'4CPT/HCPCS':['490','1358','594','1381'],'4Modifier1':['599','1358','648','1381'],'4Modifier2':['652','1358','691','1381'],'4Modifier3':['697','1358','736','1381'],'4Modifier4':['743','1358','785','1381'],'4Days Or Units':['999','1358','1056','1381'],'4cargo':['867','1358','994','1381']},'cargo5':{'5Fecha desde':['125','1406','252','1429'],'5Fecha hasta':['258','1406','388','1429'],'5Place of service':['393','1406','438','1429'],'5CPT/HCPCS':['490','1406','594','1429'],'5Modifier1':['599','1406','648','1429'],'5Modifier2':['652','1406','691','1429'],'5Modifier3':['697','1406','736','1429'],'5Modifier4':['743','1406','785','1429'],'5Days Or Units':['999','1406','1056','1429'],'5cargo':['867','1406','994','1429']},'cargo6':{'6Fecha desde':['125','1453','252','1476'],'6Fecha hasta':['258','1453','388','1476'],'6Place of service':['393','1453','438','1476'],'6CPT/HCPCS':['490','1453','594','1476'],'6Modifier1':['599','1453','648','1476'],'6Modifier2':['652','1453','691','1476'],'6Modifier3':['697','1453','736','1476'],'6Modifier4':['743','1453','785','1476'],'6Days Or Units':['999','1453','1056','1476'],'6cargo':['867','1453','994','1476']}}" this:extraccion_de_data.in_strAzureHost="https://softboticocr.cognitiveservices.azure.com/" this:extraccion_de_data.in_strApiKey="626f3061b4604e2a94db3795c57034d4" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:j="clr-namespace:JsonDataConversion;assembly=JsonDataConversion" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:sia="clr-namespace:Softbotic.ImageAligner.Activities;assembly=Softbotic.ImageAligner.Activities" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_strRutaPDFCMS1500" Type="InArgument(x:String)" />
@@ -22,7 +21,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>570,3321</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>947,3711</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>extraccion_de_data_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="37">
@@ -110,9 +109,11 @@
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="580,3296" sap2010:WorkflowViewState.IdRef="Sequence_14">
+  <Sequence sap:VirtualizedContainerService.HintSize="607,3646" sap2010:WorkflowViewState.IdRef="Sequence_14">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strVarianteHCFA1500" />
     </Sequence.Variables>
@@ -121,18 +122,21 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="538,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;reconocimiento de tipo de facturas HCFA1500&quot;]" />
-    <Assign sap:VirtualizedContainerService.HintSize="538,60" sap2010:WorkflowViewState.IdRef="Assign_20">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="559,122" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;reconocimiento de tipo de facturas HCFA1500&quot;]" />
+    <Assign sap:VirtualizedContainerService.HintSize="559,90" sap2010:WorkflowViewState.IdRef="Assign_20">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[strVarianteHCFA1500]</OutArgument>
       </Assign.To>
       <Assign.Value>
         <InArgument x:TypeArguments="x:String">
-          <Literal x:TypeArguments="x:String" Value="" />
+          <Literal x:TypeArguments="x:String">
+            <Literal.Result>
+              <OutArgument x:TypeArguments="x:String" />
+            </Literal.Result></Literal>
         </InArgument>
       </Assign.Value>
     </Assign>
-    <Sequence DisplayName="extraccion_de_data" sap:VirtualizedContainerService.HintSize="538,2842" sap2010:WorkflowViewState.IdRef="Sequence_13">
+    <Sequence DisplayName="extraccion_de_data" sap:VirtualizedContainerService.HintSize="559,3119" sap2010:WorkflowViewState.IdRef="Sequence_13">
       <Sequence.Variables>
         <Variable x:TypeArguments="s:Byte[]" Name="arrbyteImagen" />
         <Variable x:TypeArguments="x:String" Name="strBase64Imagen" />
@@ -152,7 +156,7 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke AlineadorDeFactura workflow" sap:VirtualizedContainerService.HintSize="496,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Machine learning\AlineadorDeFactura.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke AlineadorDeFactura workflow" sap:VirtualizedContainerService.HintSize="511,118" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" Level="{x:Null}" LogEntry="{x:Null}" LogExit="{x:Null}" Timeout="{x:Null}" UnSafe="False" WorkflowFileName="Machine learning\AlineadorDeFactura.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <OutArgument x:TypeArguments="x:String" x:Key="out_strFacturaUB92Alineada">[strImagenFInal]</OutArgument>
           <OutArgument x:TypeArguments="x:Boolean" x:Key="out_boolFormatoUB92">[boolAlineado]</OutArgument>
@@ -162,7 +166,7 @@
           <InArgument x:TypeArguments="x:Int32" x:Key="Page">[Page]</InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
-      <Assign sap:VirtualizedContainerService.HintSize="496,60" sap2010:WorkflowViewState.IdRef="Assign_7">
+      <Assign sap:VirtualizedContainerService.HintSize="511,90" sap2010:WorkflowViewState.IdRef="Assign_7">
         <Assign.To>
           <OutArgument x:TypeArguments="s:Byte[]">[arrbyteImagen]</OutArgument>
         </Assign.To>
@@ -170,7 +174,7 @@
           <InArgument x:TypeArguments="s:Byte[]">[file.ReadAllBytes(strImagenFInal)]</InArgument>
         </Assign.Value>
       </Assign>
-      <Assign sap:VirtualizedContainerService.HintSize="496,60" sap2010:WorkflowViewState.IdRef="Assign_8">
+      <Assign sap:VirtualizedContainerService.HintSize="511,90" sap2010:WorkflowViewState.IdRef="Assign_8">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[strBase64Imagen]</OutArgument>
         </Assign.To>
@@ -178,16 +182,16 @@
           <InArgument x:TypeArguments="x:String">[convert.ToBase64String(arrbyteImagen)]</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="496,638" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="4" RetryInterval="00:00:15">
+      <ui:RetryScope ContinueOnError="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="511,687" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="4" RetryInterval="00:00:15">
         <ui:RetryScope.ActivityBody>
           <ActivityAction>
-            <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="376,464" sap2010:WorkflowViewState.IdRef="Sequence_15">
+            <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,502" sap2010:WorkflowViewState.IdRef="Sequence_15">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <sia:AzureOCR ContinueOnError="{x:Null}" sap:VirtualizedContainerService.HintSize="334,372" Host="[in_strAzureHost]" sap2010:WorkflowViewState.IdRef="AzureOCR_2" Image="[strBase64Imagen]" Language="es" Model="latest" Output="[strResultJson]" Pages="1" ReadingOrder="basic" SubscriptionKey="[in_strApiKey]" />
+              <sia:AzureOCR ContinueOnError="{x:Null}" sap:VirtualizedContainerService.HintSize="368,408" Host="[in_strAzureHost]" sap2010:WorkflowViewState.IdRef="AzureOCR_2" Image="[strBase64Imagen]" Language="es" Model="latest" Output="[strResultJson]" Pages="1" ReadingOrder="basic" SubscriptionKey="[in_strApiKey]" />
             </Sequence>
           </ActivityAction>
         </ui:RetryScope.ActivityBody>
@@ -195,7 +199,7 @@
           <ActivityFunc x:TypeArguments="x:Boolean" />
         </ui:RetryScope.Condition>
       </ui:RetryScope>
-      <Switch x:TypeArguments="x:Int32" DisplayName="Switch" Expression="[intVariante]" sap:VirtualizedContainerService.HintSize="496,182" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+      <Switch x:TypeArguments="x:Int32" DisplayName="Switch" Expression="[intVariante]" sap:VirtualizedContainerService.HintSize="511,212" sap2010:WorkflowViewState.IdRef="Switch`1_1">
         <Switch.Default>
           <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_23">
             <Assign.To>
@@ -206,7 +210,7 @@
             </Assign.Value>
           </Assign>
         </Switch.Default>
-        <Assign x:Key="1" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_18">
+        <Assign x:Key="1" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Assign_18">
           <Assign.To>
             <OutArgument x:TypeArguments="x:String">[strJsonCoordenadasDeExtraccion]</OutArgument>
           </Assign.To>
@@ -214,7 +218,7 @@
             <InArgument x:TypeArguments="x:String">[in_strCoordenadascms1500]</InArgument>
           </Assign.Value>
         </Assign>
-        <Assign x:Key="2" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_19">
+        <Assign x:Key="2" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Assign_19">
           <Assign.To>
             <OutArgument x:TypeArguments="x:String">[strJsonCoordenadasDeExtraccion]</OutArgument>
           </Assign.To>
@@ -224,9 +228,9 @@
         </Assign>
         <x:Null x:Key="3" />
       </Switch>
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="496,266" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="511,371" sap2010:WorkflowViewState.IdRef="TryCatch_1">
         <TryCatch.Try>
-          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke AjusteJSON workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="backend\OCR\AjusteJSON.xaml">
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke AjusteJSON workflow" sap:VirtualizedContainerService.HintSize="378,118" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="backend\OCR\AjusteJSON.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <InArgument x:TypeArguments="x:String" x:Key="in_strJSON">[strResultJson]</InArgument>
               <InOutArgument x:TypeArguments="x:String" x:Key="JsonCoord">[strJsonCoordenadasDeExtraccion]</InOutArgument>
@@ -234,10 +238,10 @@
           </ui:InvokeWorkflowFile>
         </TryCatch.Try>
         <TryCatch.Catches>
-          <Catch x:TypeArguments="s:NullReferenceException" sap:VirtualizedContainerService.HintSize="400,104" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <Catch x:TypeArguments="s:NullReferenceException" sap:VirtualizedContainerService.HintSize="404,26" sap2010:WorkflowViewState.IdRef="Catch`1_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
@@ -245,13 +249,13 @@
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="s:NullReferenceException" Name="exception" />
               </ActivityAction.Argument>
-              <Throw Exception="[new BusinessRuleException(&quot;no se pudo obtener datos de la factura&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_1" />
+              <Throw Exception="[new BusinessRuleException(&quot;no se pudo obtener datos de la factura&quot;)]" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="Throw_1" />
             </ActivityAction>
           </Catch>
         </TryCatch.Catches>
       </TryCatch>
-      <sia:ExtractTextAzure ContinueOnError="{x:Null}" sap:VirtualizedContainerService.HintSize="496,132" sap2010:WorkflowViewState.IdRef="ExtractTextAzure_2" JsonOCR="[strResultJson]" JsonOutput="[strJsonDatosExtraidos]" JsonTemplate="[strJsonCoordenadasDeExtraccion]" />
-      <Assign sap:VirtualizedContainerService.HintSize="496,60" sap2010:WorkflowViewState.IdRef="Assign_21">
+      <sia:ExtractTextAzure ContinueOnError="{x:Null}" sap:VirtualizedContainerService.HintSize="511,143" sap2010:WorkflowViewState.IdRef="ExtractTextAzure_2" JsonOCR="[strResultJson]" JsonOutput="[strJsonDatosExtraidos]" JsonTemplate="[strJsonCoordenadasDeExtraccion]" />
+      <Assign sap:VirtualizedContainerService.HintSize="511,90" sap2010:WorkflowViewState.IdRef="Assign_21">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[strRutaJsonCurdo]</OutArgument>
         </Assign.To>
@@ -259,11 +263,11 @@
           <InArgument x:TypeArguments="x:String">[JsonOCR+path.GetFileNameWithoutExtension(in_strRutaPDFCMS1500)+"Page"+Page.ToString+"ocr.json"]</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[strRutaJsonCurdo]" sap:VirtualizedContainerService.HintSize="496,132" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[strResultJson]" />
-      <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[JsonCoord+path.GetFileNameWithoutExtension(in_strRutaPDFCMS1500)+&quot;Page&quot;+Page.ToString+&quot;CoordExtraccion.txt&quot;]" sap:VirtualizedContainerService.HintSize="496,132" sap2010:WorkflowViewState.IdRef="WriteTextFile_2" Text="[strJsonCoordenadasDeExtraccion]" />
-      <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[JsonExtraccion+path.GetFileNameWithoutExtension(in_strRutaPDFCMS1500)+&quot;Page&quot;+Page.ToString+&quot;extraccion.txt&quot;]" sap:VirtualizedContainerService.HintSize="496,132" sap2010:WorkflowViewState.IdRef="WriteTextFile_3" Text="[strJsonDatosExtraidos]" />
-      <j:JsonToDataTable InputJsonFilePath="{x:Null}" DisplayName="Json to data table" sap:VirtualizedContainerService.HintSize="496,185" sap2010:WorkflowViewState.IdRef="JsonToDataTable_2" InputJsonString="[strJsonDatosExtraidos]" OutputDataTable="[dt1500]" />
-      <Assign sap:VirtualizedContainerService.HintSize="496,60" sap2010:WorkflowViewState.IdRef="Assign_22">
+      <ui:WriteTextFile ContinueOnError="{x:Null}" DisplayName="Write Text File" Encoding="{x:Null}" File="{x:Null}" FileName="[strRutaJsonCurdo]" sap:VirtualizedContainerService.HintSize="511,143" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[strResultJson]" />
+      <ui:WriteTextFile ContinueOnError="{x:Null}" DisplayName="Write Text File" Encoding="{x:Null}" File="{x:Null}" FileName="[JsonCoord+path.GetFileNameWithoutExtension(in_strRutaPDFCMS1500)+&quot;Page&quot;+Page.ToString+&quot;CoordExtraccion.txt&quot;]" sap:VirtualizedContainerService.HintSize="511,143" sap2010:WorkflowViewState.IdRef="WriteTextFile_2" Text="[strJsonCoordenadasDeExtraccion]" />
+      <ui:WriteTextFile ContinueOnError="{x:Null}" DisplayName="Write Text File" Encoding="{x:Null}" File="{x:Null}" FileName="[JsonExtraccion+path.GetFileNameWithoutExtension(in_strRutaPDFCMS1500)+&quot;Page&quot;+Page.ToString+&quot;extraccion.txt&quot;]" sap:VirtualizedContainerService.HintSize="511,143" sap2010:WorkflowViewState.IdRef="WriteTextFile_3" Text="[strJsonDatosExtraidos]" />
+      <j:JsonToDataTable DisplayName="Json to data table" sap:VirtualizedContainerService.HintSize="511,201" sap2010:WorkflowViewState.IdRef="JsonToDataTable_2" InputJsonFilePath="{x:Null}" InputJsonString="[strJsonDatosExtraidos]" OutputDataTable="[dt1500]" />
+      <Assign sap:VirtualizedContainerService.HintSize="511,90" sap2010:WorkflowViewState.IdRef="Assign_22">
         <Assign.To>
           <OutArgument x:TypeArguments="sd:DataTable">[out_dtCMS1500]</OutArgument>
         </Assign.To>
@@ -271,8 +275,8 @@
           <InArgument x:TypeArguments="sd:DataTable">[dt1500.Copy]</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:ClearDataTable DataTable="[dt1500]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="496,79" sap2010:WorkflowViewState.IdRef="ClearDataTable_1" />
+      <ui:ClearDataTable DataTable="[dt1500]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="511,85" sap2010:WorkflowViewState.IdRef="ClearDataTable_1" />
     </Sequence>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="538,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;se finalizo la extraccion correctamente&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="559,122" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;se finalizo la extraccion correctamente&quot;]" />
   </Sequence>
 </Activity>

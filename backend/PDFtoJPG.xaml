@@ -13,7 +13,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1317,6309</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1317,5995</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>excel_a_json_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="46">
@@ -116,7 +116,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Alineador de facturas" sap:VirtualizedContainerService.HintSize="1327,6244" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Alineador de facturas" sap:VirtualizedContainerService.HintSize="1327,5930" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strImagenFInal" />
       <Variable x:TypeArguments="x:String" Name="strPDFaJPGFinalRoute" />
@@ -266,16 +266,16 @@
         <InArgument x:TypeArguments="x:Int32">0</InArgument>
       </Assign.Value>
     </Assign>
-    <Sequence DisplayName="clasificador" sap:VirtualizedContainerService.HintSize="1279,5083" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="clasificador" sap:VirtualizedContainerService.HintSize="1279,4769" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[Page&lt;&gt;PageCount]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1231,4836" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[Page&lt;&gt;PageCount]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1231,4522" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
         <ui:InterruptibleDoWhile.Body>
-          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1195,4660" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1195,4346" sap2010:WorkflowViewState.IdRef="TryCatch_3">
             <TryCatch.Variables>
               <Variable x:TypeArguments="x:String" Name="strFactura" />
               <Variable x:TypeArguments="x:String" Name="strRuta" />
@@ -290,7 +290,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <TryCatch.Try>
-              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1157,4380" sap2010:WorkflowViewState.IdRef="Sequence_22">
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1157,4066" sap2010:WorkflowViewState.IdRef="Sequence_22">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:String" Name="out_formatoFactura" />
                 </Sequence.Variables>
@@ -386,7 +386,7 @@
                     </Sequence>
                   </If.Else>
                 </If>
-                <If Condition="[out_formatoFactura.Equals(&quot;FORM UB04&quot;)]" DisplayName="se verifica el tipo de factura" sap:VirtualizedContainerService.HintSize="1109,1531" sap2010:WorkflowViewState.IdRef="If_9">
+                <If Condition="[out_formatoFactura.Equals(&quot;FORM UB04&quot;)]" DisplayName="se verifica el tipo de factura" sap:VirtualizedContainerService.HintSize="1109,1217" sap2010:WorkflowViewState.IdRef="If_9">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -394,7 +394,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <If.Then>
-                    <Sequence DisplayName="secuencia ub92" sap:VirtualizedContainerService.HintSize="532,1363" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                    <Sequence DisplayName="secuencia ub92" sap:VirtualizedContainerService.HintSize="532,1049" sap2010:WorkflowViewState.IdRef="Sequence_38">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="sd:DataTable" Name="dtUb92" />
                         <Variable x:TypeArguments="x:String" Name="CPT" />
@@ -407,7 +407,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,122" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Trace" Message="[&quot;factura tipo UB92&quot;]" />
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke extraccion_plantilla_UB92 workflow" sap:VirtualizedContainerService.HintSize="484,118" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="backend\OCR\extraccion_plantilla_UB92.xaml">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke extraccion_plantilla_UB92 workflow" sap:VirtualizedContainerService.HintSize="484,118" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_25" UnSafe="False" WorkflowFileName="backend\OCR\extraccion_plantilla_UB92.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
                           <InArgument x:TypeArguments="x:String" x:Key="in_strPlantillaRuta">[Config("rutaPlantillaUB92").ToString]</InArgument>
                           <InArgument x:TypeArguments="x:String" x:Key="in_strRutaPDFUB92">[strPDFaJPGFinalRoute]</InArgument>
@@ -416,9 +416,7 @@
                           <InArgument x:TypeArguments="x:String" x:Key="in_strRutaTemporal">[Config("rutaTemp").ToString]</InArgument>
                           <InArgument x:TypeArguments="x:String" x:Key="in_strAzureHost">[Config("hostAzure").ToString]</InArgument>
                           <OutArgument x:TypeArguments="x:Int32" x:Key="out_intNumeroDePaginas">[intCantidadPaginas]</OutArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="in_strFacturaAlineadaUB92">
-                            <Literal x:TypeArguments="x:String" Value="" />
-                          </InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="in_strFacturaAlineadaUB92">[Nothing]</InArgument>
                           <InArgument x:TypeArguments="x:String" x:Key="in_strApiKey">626f3061b4604e2a94db3795c57034d4</InArgument>
                           <InArgument x:TypeArguments="x:String" x:Key="in_strRutaJson">[Config("rutaJson").ToString]</InArgument>
                           <InArgument x:TypeArguments="x:Int32" x:Key="Page">[Page]</InArgument>
@@ -428,7 +426,7 @@
                           <InOutArgument x:TypeArguments="x:String" x:Key="strImagenFInal">[NombreJPGReport]</InOutArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                       </ui:InvokeWorkflowFile>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke factura_a_dic_&amp;_dtUB92 workflow" sap:VirtualizedContainerService.HintSize="484,118" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="backend\manipulacion de data excel\factura_a_dic_&amp;_dtUB92.xaml">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke factura_a_dic_&amp;_dtUB92 workflow" sap:VirtualizedContainerService.HintSize="484,118" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_27" UnSafe="False" WorkflowFileName="backend\manipulacion de data excel\factura_a_dic_&amp;_dtUB92.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
                           <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dtLineasUB92">[dtLineas]</OutArgument>
                           <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="out_diccDatosFormasMedicas">[diccstrstrDatos]</OutArgument>
@@ -438,39 +436,62 @@
                           <OutArgument x:TypeArguments="x:String" x:Key="strREV_CDout">[REV]</OutArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                       </ui:InvokeWorkflowFile>
-                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="484,371" sap2010:WorkflowViewState.IdRef="TryCatch_4">
-                        <TryCatch.Try>
-                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke consulta a db workflow" sap:VirtualizedContainerService.HintSize="379,118" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_16" UnSafe="False" WorkflowFileName="backend\DB\consulta a db.xaml">
-                            <ui:InvokeWorkflowFile.Arguments>
-                              <InArgument x:TypeArguments="x:String" x:Key="in_strConnectionString">[Config("ConexionSQL").ToString]</InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="In_strPatientAccount">[diccstrstrDatos("Pacient Account")]</InArgument>
-                              <OutArgument x:TypeArguments="x:Boolean" x:Key="out_boolExistePaciente">[boolExistePaciente]</OutArgument>
-                              <OutArgument x:TypeArguments="x:Boolean" x:Key="out_boolFueRealizado">[boolFacturaYaProcesada]</OutArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="in_strDatabaseType">[Config("TipoDeBaseDeDatos").ToString]</InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="in_strQueryConsultaMember">[Config("queryMember").ToString]</InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="in_strQueryConsultaClaim">[Config("queryClaimnumber").ToString]</InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="in_strInsuredID">[diccstrstrDatos("Insured ID")]</InArgument>
-                              <OutArgument x:TypeArguments="x:String" x:Key="out_strMemberIdFInal">[strMemberIdFInal]</OutArgument>
-                            </ui:InvokeWorkflowFile.Arguments>
-                          </ui:InvokeWorkflowFile>
-                        </TryCatch.Try>
-                        <TryCatch.Catches>
-                          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,26" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="484,57" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                        <ui:CommentOut.Body>
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="486,465" sap2010:WorkflowViewState.IdRef="Sequence_58">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ActivityAction x:TypeArguments="s:Exception">
-                              <ActivityAction.Argument>
-                                <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                              </ActivityAction.Argument>
-                              <Throw Exception="[new BusinessRuleException(&quot;No se encontro el dato consultado a la base de datos&quot;)]" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="Throw_6" />
-                            </ActivityAction>
-                          </Catch>
-                        </TryCatch.Catches>
-                      </TryCatch>
+                            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,371" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <TryCatch.Try>
+                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke consulta a db workflow" sap:VirtualizedContainerService.HintSize="379,118" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_16" UnSafe="False" WorkflowFileName="backend\DB\consulta a db.xaml">
+                                  <ui:InvokeWorkflowFile.Arguments>
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_strConnectionString">[Config("ConexionSQL").ToString]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="In_strPatientAccount">[diccstrstrDatos("Pacient Account")]</InArgument>
+                                    <OutArgument x:TypeArguments="x:Boolean" x:Key="out_boolExistePaciente">[boolExistePaciente]</OutArgument>
+                                    <OutArgument x:TypeArguments="x:Boolean" x:Key="out_boolFueRealizado">[boolFacturaYaProcesada]</OutArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_strDatabaseType">[Config("TipoDeBaseDeDatos").ToString]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_strQueryConsultaMember">[Config("queryMember").ToString]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_strQueryConsultaClaim">[Config("queryClaimnumber").ToString]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_strInsuredID">[diccstrstrDatos("Insured ID")]</InArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="out_strMemberIdFInal">[strMemberIdFInal]</OutArgument>
+                                  </ui:InvokeWorkflowFile.Arguments>
+                                </ui:InvokeWorkflowFile>
+                              </TryCatch.Try>
+                              <TryCatch.Catches>
+                                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,26" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ActivityAction x:TypeArguments="s:Exception">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                    </ActivityAction.Argument>
+                                    <Throw Exception="[new BusinessRuleException(&quot;No se encontro el dato consultado a la base de datos&quot;)]" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="Throw_6" />
+                                  </ActivityAction>
+                                </Catch>
+                              </TryCatch.Catches>
+                            </TryCatch>
+                          </Sequence>
+                        </ui:CommentOut.Body>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:CommentOut>
                       <If Condition="[boolFacturaYaProcesada]" sap:VirtualizedContainerService.HintSize="484,262" sap2010:WorkflowViewState.IdRef="If_12">
                         <If.Then>
                           <Throw Exception="[new BusinessRuleException(&quot;Factura ya fue procesada de WWM factura: &quot;+path.GetFileName(in_TransactionItem(&quot;RutaFactura&quot;).ToString)+&quot; Insured ID: &quot;+diccstrstrDatos(&quot;Insured ID&quot;))]" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="Throw_4" />
@@ -496,7 +517,7 @@
                     </Sequence>
                   </If.Then>
                   <If.Else>
-                    <Sequence DisplayName="secuencia HCFA1500" sap:VirtualizedContainerService.HintSize="532,1363" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                    <Sequence DisplayName="secuencia HCFA1500" sap:VirtualizedContainerService.HintSize="532,1049" sap2010:WorkflowViewState.IdRef="Sequence_39">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="sd:DataTable" Name="dtcms1500" />
                         <Variable x:TypeArguments="x:String" Name="CTP" />
@@ -508,7 +529,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,122" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Trace" Message="[&quot;factura tipo HCFA1500&quot;]" />
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke extraccion_plantilla_cms_15000 workflow" sap:VirtualizedContainerService.HintSize="484,118" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="backend\OCR\extraccion_plantilla_HCFA15000 - Copy (1).xaml">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke extraccion_plantilla_cms_15000 workflow" sap:VirtualizedContainerService.HintSize="484,118" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_20" UnSafe="False" WorkflowFileName="backend\OCR\extraccion_plantilla_HCFA15000 - Copy (1).xaml">
                         <ui:InvokeWorkflowFile.Arguments>
                           <InArgument x:TypeArguments="x:String" x:Key="in_strRutaPDFCMS1500">[strPDFaJPGFinalRoute]</InArgument>
                           <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dtCMS1500">[dtcms1500]</OutArgument>
@@ -529,54 +550,69 @@
                           <OutArgument x:TypeArguments="x:String" x:Key="strImagenFInal">[NombreJPGReport]</OutArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                       </ui:InvokeWorkflowFile>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke factura_a_dic_&amp;_dt1500 workflow" sap:VirtualizedContainerService.HintSize="484,118" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="backend\manipulacion de data excel\factura_a_dic_&amp;_dt1500.xaml">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke factura_a_dic_&amp;_dt1500 workflow" sap:VirtualizedContainerService.HintSize="484,118" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_21" UnSafe="False" WorkflowFileName="backend\manipulacion de data excel\factura_a_dic_&amp;_dt1500.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
                           <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="out_diccDatosFormasMedicas">[diccstrstrDatos]</OutArgument>
                           <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dtLineasCMS1500">[dtLineas]</OutArgument>
-                          <InArgument x:TypeArguments="x:Int32" x:Key="in_intPaginasPDF">[intCantidadPaginas]</InArgument>
                           <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dtDatos">[dtcms1500]</InArgument>
-                          <OutArgument x:TypeArguments="x:String" x:Key="CTP">[CTP]</OutArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                       </ui:InvokeWorkflowFile>
-                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="484,371" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="484,57" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                        <ui:CommentOut.Body>
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="486,151" sap2010:WorkflowViewState.IdRef="Sequence_59">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="368,57" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <TryCatch.Try>
+                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke consulta a db workflow" sap:VirtualizedContainerService.HintSize="379,118" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_17" UnSafe="False" WorkflowFileName="backend\DB\consulta a db.xaml">
+                                  <ui:InvokeWorkflowFile.Arguments>
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_strConnectionString">[Config("ConexionSQL").ToString]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="In_strPatientAccount">[diccstrstrDatos("Pacient Account")]</InArgument>
+                                    <OutArgument x:TypeArguments="x:Boolean" x:Key="out_boolExistePaciente">[boolExistePaciente]</OutArgument>
+                                    <OutArgument x:TypeArguments="x:Boolean" x:Key="out_boolFueRealizado">[boolFacturaYaProcesada]</OutArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_strDatabaseType">[Config("TipoDeBaseDeDatos").ToString]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_strQueryConsultaMember">[Config("queryMember").ToString]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_strQueryConsultaClaim">[Config("queryClaimnumber").ToString]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_strInsuredID">[diccstrstrDatos("Insured ID")]</InArgument>
+                                    <OutArgument x:TypeArguments="x:String" x:Key="out_strMemberIdFInal">[strMemberIdFInal]</OutArgument>
+                                  </ui:InvokeWorkflowFile.Arguments>
+                                </ui:InvokeWorkflowFile>
+                              </TryCatch.Try>
+                              <TryCatch.Catches>
+                                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,26" sap2010:WorkflowViewState.IdRef="Catch`1_5">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ActivityAction x:TypeArguments="s:Exception">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                    </ActivityAction.Argument>
+                                    <Throw Exception="[new BusinessRuleException(&quot;No se encontro el dato consultado a la base de datos&quot;)]" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="Throw_7" />
+                                  </ActivityAction>
+                                </Catch>
+                              </TryCatch.Catches>
+                            </TryCatch>
+                          </Sequence>
+                        </ui:CommentOut.Body>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <TryCatch.Try>
-                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke consulta a db workflow" sap:VirtualizedContainerService.HintSize="379,118" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_17" UnSafe="False" WorkflowFileName="backend\DB\consulta a db.xaml">
-                            <ui:InvokeWorkflowFile.Arguments>
-                              <InArgument x:TypeArguments="x:String" x:Key="in_strConnectionString">[Config("ConexionSQL").ToString]</InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="In_strPatientAccount">[diccstrstrDatos("Pacient Account")]</InArgument>
-                              <OutArgument x:TypeArguments="x:Boolean" x:Key="out_boolExistePaciente">[boolExistePaciente]</OutArgument>
-                              <OutArgument x:TypeArguments="x:Boolean" x:Key="out_boolFueRealizado">[boolFacturaYaProcesada]</OutArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="in_strDatabaseType">[Config("TipoDeBaseDeDatos").ToString]</InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="in_strQueryConsultaMember">[Config("queryMember").ToString]</InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="in_strQueryConsultaClaim">[Config("queryClaimnumber").ToString]</InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="in_strInsuredID">[diccstrstrDatos("Insured ID")]</InArgument>
-                              <OutArgument x:TypeArguments="x:String" x:Key="out_strMemberIdFInal">[strMemberIdFInal]</OutArgument>
-                            </ui:InvokeWorkflowFile.Arguments>
-                          </ui:InvokeWorkflowFile>
-                        </TryCatch.Try>
-                        <TryCatch.Catches>
-                          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,26" sap2010:WorkflowViewState.IdRef="Catch`1_5">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <ActivityAction x:TypeArguments="s:Exception">
-                              <ActivityAction.Argument>
-                                <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                              </ActivityAction.Argument>
-                              <Throw Exception="[new BusinessRuleException(&quot;No se encontro el dato consultado a la base de datos&quot;)]" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="Throw_7" />
-                            </ActivityAction>
-                          </Catch>
-                        </TryCatch.Catches>
-                      </TryCatch>
+                      </ui:CommentOut>
                       <If Condition="[boolFacturaYaProcesada]" sap:VirtualizedContainerService.HintSize="484,262" sap2010:WorkflowViewState.IdRef="If_13">
                         <If.Then>
                           <Throw Exception="[new BusinessRuleException(&quot;Factura ya fue procesada de WWM factura: &quot;+path.GetFileName(in_TransactionItem(&quot;RutaFactura&quot;).ToString)+&quot; Insured ID: &quot;+diccstrstrDatos(&quot;Insured ID&quot;))]" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="Throw_5" />
