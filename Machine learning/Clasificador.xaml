@@ -10,7 +10,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1193,1671</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1253,1838</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Clasificador_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="62">
@@ -87,7 +87,7 @@
       <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Clasificador" sap:VirtualizedContainerService.HintSize="482,1606" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Clasificador" sap:VirtualizedContainerService.HintSize="500,1773" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="C:\RPA\Reclamos Salud\Data\Input\extra.txt" Name="TextPlantilla" />
       <Variable x:TypeArguments="x:String" Name="JsonTextSalida" />
@@ -98,9 +98,9 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Clasificando Imagen&quot;]" />
-    <ui:ReadTextFile Content="[TextPlantilla]" ContinueOnError="{x:Null}" DisplayName="Read Text File" Encoding="{x:Null}" File="{x:Null}" FileName="[in_Config(&quot;Ruta_PlantillaClasificador&quot;).ToString]" sap:VirtualizedContainerService.HintSize="434,85" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" Result="{x:Null}" />
-    <Assign DisplayName="se agregan la info de la imagen a la plantilla" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,122" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Clasificando Imagen&quot;]" />
+    <ui:ReadTextFile File="{x:Null}" Content="[TextPlantilla]" DisplayName="Read Text File" FileName="[in_Config(&quot;Ruta_PlantillaClasificador&quot;).ToString]" sap:VirtualizedContainerService.HintSize="452,85" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+    <Assign DisplayName="se agregan la info de la imagen a la plantilla" sap:VirtualizedContainerService.HintSize="452,88" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[TextPlantilla]</OutArgument>
       </Assign.To>
@@ -108,7 +108,7 @@
         <InArgument x:TypeArguments="x:String">[TextPlantilla.Replace("Imagepath",path.Combine(RutaTemp,In_Image))]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Assign_2">
+    <Assign sap:VirtualizedContainerService.HintSize="452,88" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[TextPlantilla]</OutArgument>
       </Assign.To>
@@ -116,11 +116,22 @@
         <InArgument x:TypeArguments="x:String">[TextPlantilla.Replace("outputpath",ArchivoSalida)]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:StartProcess Arguments="[TextPlantilla]" ContinueOnError="{x:Null}" DisplayName="Start Process" FileName="[in_Config(&quot;Ruta_delEjecutableClasificador&quot;).ToString]" sap:VirtualizedContainerService.HintSize="434,88" sap2010:WorkflowViewState.IdRef="StartProcess_1" StartType="{x:Null}" Timeout="{x:Null}" WorkingDirectory="[in_Config(&quot;Ruta_Clasificador&quot;).ToString]" />
-    <ui:StartProcess Arguments="[TextPlantilla]" ContinueOnError="{x:Null}" DisplayName="Start Process" FileName="C:\RPA\Reclamos Salud\Clasificador_WWM_TipoDoc\Clasificador_WWM_TipoDoc\WWM_ML_TipoDocumentos_ConsoleApp1.exe" sap:VirtualizedContainerService.HintSize="434,88" sap2010:WorkflowViewState.IdRef="StartProcess_2" StartType="{x:Null}" Timeout="{x:Null}" WorkingDirectory="C:\RPA\Reclamos Salud\Clasificador_WWM_TipoDoc\Clasificador_WWM_TipoDoc" />
-    <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="Delay_1" />
-    <ui:ReadTextFile Content="[JsonTextSalida]" ContinueOnError="{x:Null}" DisplayName="Read Text File" Encoding="{x:Null}" File="{x:Null}" FileName="[ArchivoSalida]" sap:VirtualizedContainerService.HintSize="434,85" sap2010:WorkflowViewState.IdRef="ReadTextFile_2" Result="{x:Null}" />
-    <Assign sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Assign_3">
+    <ui:StartProcess Arguments="[TextPlantilla]" DisplayName="Start Process" FileName="[in_Config(&quot;Ruta_delEjecutableClasificador&quot;).ToString]" sap:VirtualizedContainerService.HintSize="452,88" sap2010:WorkflowViewState.IdRef="StartProcess_1" WorkingDirectory="[in_Config(&quot;Ruta_Clasificador&quot;).ToString]" />
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="452,261" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:StartProcess Arguments="[TextPlantilla]" DisplayName="Start Process" FileName="C:\RPA\Reclamos Salud\Clasificador_WWM_TipoDoc\Clasificador_WWM_TipoDoc\WWM_ML_TipoDocumentos_ConsoleApp1.exe" sap:VirtualizedContainerService.HintSize="368,88" sap2010:WorkflowViewState.IdRef="StartProcess_2" WorkingDirectory="C:\RPA\Reclamos Salud\Clasificador_WWM_TipoDoc\Clasificador_WWM_TipoDoc" />
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="452,25" sap2010:WorkflowViewState.IdRef="Delay_1" />
+    <ui:ReadTextFile File="{x:Null}" Content="[JsonTextSalida]" DisplayName="Read Text File" FileName="[ArchivoSalida]" sap:VirtualizedContainerService.HintSize="452,85" sap2010:WorkflowViewState.IdRef="ReadTextFile_2" />
+    <Assign sap:VirtualizedContainerService.HintSize="452,88" sap2010:WorkflowViewState.IdRef="Assign_3">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[JsonTextSalida]</OutArgument>
       </Assign.To>

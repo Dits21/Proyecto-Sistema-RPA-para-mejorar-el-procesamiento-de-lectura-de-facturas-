@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Update_DB" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1136,2526" sap2010:WorkflowViewState.IdRef="Update_DB_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Update_DB" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1253,5054" sap2010:WorkflowViewState.IdRef="Update_DB_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>Microsoft.VisualBasic</x:String>
@@ -33,6 +33,8 @@
       <x:String>UiPath.Excel</x:String>
       <x:String>System.Reflection</x:String>
       <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -63,7 +65,6 @@
       <AssemblyReference>System.Memory.Data</AssemblyReference>
       <AssemblyReference>System.ValueTuple</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>UiPath.Database</AssemblyReference>
@@ -75,9 +76,10 @@
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
       <AssemblyReference>System.Runtime.InteropServices.RuntimeInformation</AssemblyReference>
       <AssemblyReference>System.Data.Entity</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Update_DB" sap:VirtualizedContainerService.HintSize="482,2461" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Update_DB" sap:VirtualizedContainerService.HintSize="566,4989" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:DatabaseConnection" Name="databaseConnectionWWM" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_DatosExcel" />
@@ -87,15 +89,20 @@
       <Variable x:TypeArguments="sd:DataTable" Name="dt_TablaProvedores" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_TablaServicios" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_TablaPacientes" />
+      <Variable x:TypeArguments="x:Int32" Name="resultID" />
+      <Variable x:TypeArguments="x:Int32" Name="int_currentRow" />
+      <Variable x:TypeArguments="sd:DataColumn" Name="dtc_columnaID" />
+      <Variable x:TypeArguments="x:String" Name="ID" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtResults" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;actualizar base de datos&quot;]" />
-    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_DatosExcel]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="434,88" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="sheet1" WorkbookPath="C:\RPA\ExcelFacturas\plantilla.xlsx" />
-    <ui:FilterDataTable DataTable="[dt_DatosExcel]" DisplayName="extraer tabla facturas" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="434,171" sap2010:WorkflowViewState.IdRef="FilterDataTable_6" OutputDataTable="[dt_TablaFacturas]" SelectColumnsMode="Keep">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="518,122" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;actualizar base de datos&quot;]" />
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_DatosExcel]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="518,88" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="sheet1" WorkbookPath="C:\RPA\ExcelFacturas\plantilla.xlsx" />
+    <ui:FilterDataTable DataTable="[dt_DatosExcel]" DisplayName="extraer tabla facturas" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="518,171" sap2010:WorkflowViewState.IdRef="FilterDataTable_6" OutputDataTable="[dt_TablaFacturas]" SelectColumnsMode="Keep">
       <ui:FilterDataTable.Filters>
         <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
           <ui:FilterOperationArgument Column="{x:Null}" Operand="{x:Null}" BooleanOperator="And" Operator="LT" />
@@ -106,27 +113,12 @@
           <InArgument x:TypeArguments="x:String">["claim_icn_number"]</InArgument>
           <InArgument x:TypeArguments="x:String">["line_number"]</InArgument>
           <InArgument x:TypeArguments="x:String">["claim_type"]</InArgument>
-          <InArgument x:TypeArguments="x:String">["billed_amount"]</InArgument>
-          <InArgument x:TypeArguments="x:String">["allowed_amount"]</InArgument>
+          <InArgument x:TypeArguments="x:String">[" billed_amount "]</InArgument>
           <InArgument x:TypeArguments="x:String">["insured_number"]</InArgument>
         </scg:List>
       </ui:FilterDataTable.SelectColumns>
     </ui:FilterDataTable>
-    <ui:FilterDataTable DataTable="[dt_DatosExcel]" DisplayName="extraer tabla diagnosticos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="434,171" sap2010:WorkflowViewState.IdRef="FilterDataTable_7" OutputDataTable="[dt_TablaDiagnosticos]" SelectColumnsMode="Keep">
-      <ui:FilterDataTable.Filters>
-        <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
-          <ui:FilterOperationArgument Column="{x:Null}" Operand="{x:Null}" BooleanOperator="And" Operator="LT" />
-        </scg:List>
-      </ui:FilterDataTable.Filters>
-      <ui:FilterDataTable.SelectColumns>
-        <scg:List x:TypeArguments="InArgument" Capacity="4">
-          <InArgument x:TypeArguments="x:String">["icd_version_code"]</InArgument>
-          <InArgument x:TypeArguments="x:String">["diagnosis_code"]</InArgument>
-          <InArgument x:TypeArguments="x:String">["factura_id"]</InArgument>
-        </scg:List>
-      </ui:FilterDataTable.SelectColumns>
-    </ui:FilterDataTable>
-    <ui:FilterDataTable DataTable="[dt_DatosExcel]" DisplayName="extraer tabla proveedores" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="434,171" sap2010:WorkflowViewState.IdRef="FilterDataTable_8" OutputDataTable="[dt_TablaProvedores]" SelectColumnsMode="Keep">
+    <ui:FilterDataTable DataTable="[dt_DatosExcel]" DisplayName="extraer tabla diagnosticos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="518,171" sap2010:WorkflowViewState.IdRef="FilterDataTable_7" OutputDataTable="[dt_TablaDiagnosticos]" SelectColumnsMode="Keep">
       <ui:FilterDataTable.Filters>
         <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
           <ui:FilterOperationArgument Column="{x:Null}" Operand="{x:Null}" BooleanOperator="And" Operator="LT" />
@@ -134,18 +126,29 @@
       </ui:FilterDataTable.Filters>
       <ui:FilterDataTable.SelectColumns>
         <scg:List x:TypeArguments="InArgument" Capacity="8">
+          <InArgument x:TypeArguments="x:String">["icd_version_code"]</InArgument>
+          <InArgument x:TypeArguments="x:String">["diagnosis_code_1"]</InArgument>
+          <InArgument x:TypeArguments="x:String">["diagnosis_code_2"]</InArgument>
+          <InArgument x:TypeArguments="x:String">["diagnosis_code_3"]</InArgument>
+          <InArgument x:TypeArguments="x:String">["diagnosis_code_4"]</InArgument>
+        </scg:List>
+      </ui:FilterDataTable.SelectColumns>
+    </ui:FilterDataTable>
+    <ui:FilterDataTable DataTable="[dt_DatosExcel]" DisplayName="extraer tabla proveedores" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="518,171" sap2010:WorkflowViewState.IdRef="FilterDataTable_8" OutputDataTable="[dt_TablaProvedores]" SelectColumnsMode="Keep">
+      <ui:FilterDataTable.Filters>
+        <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+          <ui:FilterOperationArgument Column="{x:Null}" Operand="{x:Null}" BooleanOperator="And" Operator="LT" />
+        </scg:List>
+      </ui:FilterDataTable.Filters>
+      <ui:FilterDataTable.SelectColumns>
+        <scg:List x:TypeArguments="InArgument" Capacity="4">
           <InArgument x:TypeArguments="x:String">["provider_name"]</InArgument>
           <InArgument x:TypeArguments="x:String">["provider_tax_id"]</InArgument>
-          <InArgument x:TypeArguments="x:String">["provider_first_name"]</InArgument>
           <InArgument x:TypeArguments="x:String">["provider_last_name"]</InArgument>
-          <InArgument x:TypeArguments="x:String">["provider_group_name"]</InArgument>
-          <InArgument x:TypeArguments="x:String">["provider_address"]</InArgument>
-          <InArgument x:TypeArguments="x:String">["provider_phone"]</InArgument>
-          <InArgument x:TypeArguments="x:String">["factura_id"]</InArgument>
         </scg:List>
       </ui:FilterDataTable.SelectColumns>
     </ui:FilterDataTable>
-    <ui:FilterDataTable DataTable="[dt_DatosExcel]" DisplayName="extraer tabla servicios" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="434,171" sap2010:WorkflowViewState.IdRef="FilterDataTable_9" OutputDataTable="[dt_TablaServicios]" SelectColumnsMode="Keep">
+    <ui:FilterDataTable DataTable="[dt_DatosExcel]" DisplayName="extraer tabla servicios" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="518,171" sap2010:WorkflowViewState.IdRef="FilterDataTable_9" OutputDataTable="[dt_TablaServicios]" SelectColumnsMode="Keep">
       <ui:FilterDataTable.Filters>
         <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
           <ui:FilterOperationArgument Column="{x:Null}" Operand="{x:Null}" BooleanOperator="And" Operator="LT" />
@@ -161,47 +164,172 @@
           <InArgument x:TypeArguments="x:String">["procedure_code_modifier_2"]</InArgument>
           <InArgument x:TypeArguments="x:String">["procedure_code_modifier_3"]</InArgument>
           <InArgument x:TypeArguments="x:String">["procedure_code_modifier_4"]</InArgument>
-          <InArgument x:TypeArguments="x:String">["service_type"]</InArgument>
-          <InArgument x:TypeArguments="x:String">["factura_id"]</InArgument>
-          <InArgument x:TypeArguments="x:String">["reason_code"]</InArgument>
+          <InArgument x:TypeArguments="x:String">[" rev_code_units"]</InArgument>
           <InArgument x:TypeArguments="x:String">["diagnosis_code_pointer"]</InArgument>
         </scg:List>
       </ui:FilterDataTable.SelectColumns>
     </ui:FilterDataTable>
-    <ui:FilterDataTable DataTable="[dt_DatosExcel]" DisplayName="extraer tabla pacientes" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="434,171" sap2010:WorkflowViewState.IdRef="FilterDataTable_10" OutputDataTable="[dt_TablaPacientes]" SelectColumnsMode="Keep">
+    <ui:FilterDataTable DataTable="[dt_DatosExcel]" DisplayName="extraer tabla pacientes" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="518,171" sap2010:WorkflowViewState.IdRef="FilterDataTable_10" OutputDataTable="[dt_TablaPacientes]" SelectColumnsMode="Keep">
       <ui:FilterDataTable.Filters>
         <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
           <ui:FilterOperationArgument Column="{x:Null}" Operand="{x:Null}" BooleanOperator="And" Operator="LT" />
         </scg:List>
       </ui:FilterDataTable.Filters>
       <ui:FilterDataTable.SelectColumns>
-        <scg:List x:TypeArguments="InArgument" Capacity="16">
-          <InArgument x:TypeArguments="x:String">["service_start_date"]</InArgument>
-          <InArgument x:TypeArguments="x:String">["service_end_date"]</InArgument>
-          <InArgument x:TypeArguments="x:String">["place_of_service"]</InArgument>
-          <InArgument x:TypeArguments="x:String">["cpt_or_revenue_code"]</InArgument>
-          <InArgument x:TypeArguments="x:String">["procedure_code_modifier_1"]</InArgument>
-          <InArgument x:TypeArguments="x:String">["procedure_code_modifier_2"]</InArgument>
-          <InArgument x:TypeArguments="x:String">["procedure_code_modifier_3"]</InArgument>
-          <InArgument x:TypeArguments="x:String">["procedure_code_modifier_4"]</InArgument>
-          <InArgument x:TypeArguments="x:String">["service_type"]</InArgument>
-          <InArgument x:TypeArguments="x:String">["reason_code"]</InArgument>
-          <InArgument x:TypeArguments="x:String">["diagnosis_code_pointer"]</InArgument>
-          <InArgument x:TypeArguments="x:String">["factura_id"]</InArgument>
+        <scg:List x:TypeArguments="InArgument" Capacity="4">
+          <InArgument x:TypeArguments="x:String">["patient_first_name"]</InArgument>
+          <InArgument x:TypeArguments="x:String">["patient_last_name"]</InArgument>
+          <InArgument x:TypeArguments="x:String">["patient_relationship"]</InArgument>
         </scg:List>
       </ui:FilterDataTable.SelectColumns>
     </ui:FilterDataTable>
-    <ui:DatabaseConnect DisplayName="Connect" sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="MySql.Data.MySqlClient" ConnectionString="Server=127.0.0.1;Port=3306;Database=tesis;Uid=root;Pwd=Kingdomhearts2;" DatabaseConnection="[databaseConnectionWWM]" />
-    <ui:InsertDataTable ContinueOnError="{x:Null}" AffectedRecords="[Results]" DataTable="[dt_TablaFacturas]" DisplayName="Insert facturas" ExistingDbConnection="[databaseConnectionWWM]" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="InsertDataTable_2" TableName="facturas" />
-    <ui:ExecuteNonQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" AffectedRecords="[Results]" CommandType="Text" DisplayName="Run command" ExistingDbConnection="[databaseConnectionWWM]" sap:VirtualizedContainerService.HintSize="434,89" sap2010:WorkflowViewState.IdRef="ExecuteNonQuery_2" Sql="SELECT LAST_INSERT_ID();">
-      <ui:ExecuteNonQuery.Parameters>
+    <ui:DatabaseConnect DisplayName="Connect" sap:VirtualizedContainerService.HintSize="518,60" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="MySql.Data.MySqlClient" ConnectionString="Server=127.0.0.1;Port=3307;Database=tesis;Uid=root;Pwd=Kingdomhearts2;" DatabaseConnection="[databaseConnectionWWM]" />
+    <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dtResults]" DisplayName="Run query" ExistingDbConnection="[databaseConnectionWWM]" sap:VirtualizedContainerService.HintSize="518,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_1" Sql="SELECT AUTO_INCREMENT &#xA;FROM information_schema.tables &#xA;WHERE table_name = 'facturas' &#xA;  AND table_schema = 'tesis';&#xA;">
+      <ui:ExecuteQuery.Parameters>
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
-      </ui:ExecuteNonQuery.Parameters>
-    </ui:ExecuteNonQuery>
-    <ui:InsertDataTable ContinueOnError="{x:Null}" AffectedRecords="[Results]" DataTable="[dt_TablaDiagnosticos]" DisplayName="Insert diagnosticos" ExistingDbConnection="[databaseConnectionWWM]" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="InsertDataTable_3" TableName="diagnosticos" />
-    <ui:InsertDataTable ContinueOnError="{x:Null}" AffectedRecords="[Results]" DataTable="[dt_TablaProvedores]" DisplayName="Insert proveedores" ExistingDbConnection="[databaseConnectionWWM]" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="InsertDataTable_4" TableName="proveedores" />
-    <ui:InsertDataTable ContinueOnError="{x:Null}" AffectedRecords="[Results]" DataTable="[dt_TablaServicios]" DisplayName="Insert servicios" ExistingDbConnection="[databaseConnectionWWM]" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="InsertDataTable_5" TableName="servicios" />
-    <ui:InsertDataTable ContinueOnError="{x:Null}" AffectedRecords="[Results]" DataTable="[dt_TablaPacientes]" DisplayName="Insert servicios" ExistingDbConnection="[databaseConnectionWWM]" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="InsertDataTable_6" TableName="pacientes" />
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Fin de consulta contra BD&quot;]" />
+      </ui:ExecuteQuery.Parameters>
+    </ui:ExecuteQuery>
+    <Assign sap:VirtualizedContainerService.HintSize="518,88" sap2010:WorkflowViewState.IdRef="Assign_10">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Int32">[resultID]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Int32">[Convert.ToInt32(dtResults.Rows(0)("AUTO_INCREMENT"))]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <If Condition="[resultID=-1]" DisplayName="si es igual a -1" sap:VirtualizedContainerService.HintSize="518,387" sap2010:WorkflowViewState.IdRef="If_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="482,182" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign DisplayName="primera linea de la base de datos" sap:VirtualizedContainerService.HintSize="434,88" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:Int32">[resultID]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:Int32">1</InArgument>
+            </Assign.Value>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Assign>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap:VirtualizedContainerService.HintSize="416,105" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </If.Else>
+    </If>
+    <Assign sap:VirtualizedContainerService.HintSize="518,88" sap2010:WorkflowViewState.IdRef="Assign_11">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[dt_TablaFacturas.Columns(" billed_amount ").ColumnName]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">billed_amount</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:InsertDataTable ContinueOnError="{x:Null}" AffectedRecords="[Results]" DataTable="[dt_TablaFacturas]" DisplayName="Insert facturas" ExistingDbConnection="[databaseConnectionWWM]" sap:VirtualizedContainerService.HintSize="518,116" sap2010:WorkflowViewState.IdRef="InsertDataTable_2" TableName="facturas" />
+    <Assign sap:VirtualizedContainerService.HintSize="518,88" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="sd:DataColumn">[dtc_columnaID]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="sd:DataColumn">[New DataColumn("factura_id", GetType(Guid))]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:AddDataColumn x:TypeArguments="x:Int32" AllowDBNull="{x:Null}" Column="{x:Null}" AutoIncrement="True" ColumnName="factura_id" DataTable="[dt_TablaDiagnosticos]" DefaultValue="[resultID]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="518,201" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_4" MaxLength="100" Unique="False" />
+    <ui:AddDataColumn x:TypeArguments="x:Int32" AllowDBNull="{x:Null}" Column="{x:Null}" AutoIncrement="True" ColumnName="factura_id" DataTable="[dt_TablaProvedores]" DefaultValue="[resultID]" DisplayName="Add Data proveedores" sap:VirtualizedContainerService.HintSize="518,201" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_5" MaxLength="100" Unique="False" />
+    <ui:AddDataColumn x:TypeArguments="x:Int32" AllowDBNull="{x:Null}" Column="{x:Null}" AutoIncrement="True" ColumnName="factura_id" DataTable="[dt_TablaServicios]" DefaultValue="[resultID]" DisplayName="Add Data servicios" sap:VirtualizedContainerService.HintSize="518,201" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_6" MaxLength="100" Unique="False" />
+    <ui:AddDataColumn x:TypeArguments="x:Int32" AllowDBNull="{x:Null}" Column="{x:Null}" AutoIncrement="True" ColumnName="factura_id" DataTable="[dt_TablaPacientes]" DefaultValue="[resultID]" DisplayName="Add Data pacientes" sap:VirtualizedContainerService.HintSize="518,201" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_7" MaxLength="100" Unique="False" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[int_currentRow]" DataTable="[dt_TablaFacturas]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="518,785" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="482,662" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign DisplayName="agregar valor" sap:VirtualizedContainerService.HintSize="434,88" sap2010:WorkflowViewState.IdRef="Assign_5">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Object">[dt_TablaDiagnosticos.Rows(int_currentrow)("factura_id")]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Object">[resultID]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign DisplayName="agregar valor" sap:VirtualizedContainerService.HintSize="434,88" sap2010:WorkflowViewState.IdRef="Assign_6">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Object">[dt_TablaServicios.Rows(int_currentrow)("factura_id")]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Object">[resultID]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign DisplayName="agregar valor" sap:VirtualizedContainerService.HintSize="434,88" sap2010:WorkflowViewState.IdRef="Assign_7">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Object">[dt_TablaProvedores.Rows(int_currentrow)("factura_id")]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Object">[resultID]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign DisplayName="agregar valor" sap:VirtualizedContainerService.HintSize="434,88" sap2010:WorkflowViewState.IdRef="Assign_8">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Object">[dt_TablaPacientes.Rows(int_currentrow)("factura_id")]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Object">[resultID]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign DisplayName="se sigue desde la anterior" sap:VirtualizedContainerService.HintSize="434,88" sap2010:WorkflowViewState.IdRef="Assign_9">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[resultID]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[resultID+1]</InArgument>
+              </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Assign>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEachRow>
+    <ui:InsertDataTable ContinueOnError="{x:Null}" AffectedRecords="[Results]" DataTable="[dt_TablaDiagnosticos]" DisplayName="Insert diagnosticos" ExistingDbConnection="[databaseConnectionWWM]" sap:VirtualizedContainerService.HintSize="518,116" sap2010:WorkflowViewState.IdRef="InsertDataTable_3" TableName="diagnosticos" />
+    <ui:InsertDataTable ContinueOnError="{x:Null}" AffectedRecords="[Results]" DataTable="[dt_TablaProvedores]" DisplayName="Insert proveedores" ExistingDbConnection="[databaseConnectionWWM]" sap:VirtualizedContainerService.HintSize="518,116" sap2010:WorkflowViewState.IdRef="InsertDataTable_4" TableName="proveedores" />
+    <ui:InsertDataTable ContinueOnError="{x:Null}" AffectedRecords="[Results]" DataTable="[dt_TablaServicios]" DisplayName="Insert servicios" ExistingDbConnection="[databaseConnectionWWM]" sap:VirtualizedContainerService.HintSize="518,116" sap2010:WorkflowViewState.IdRef="InsertDataTable_5" TableName="servicios" />
+    <ui:InsertDataTable ContinueOnError="{x:Null}" AffectedRecords="[Results]" DataTable="[dt_TablaPacientes]" DisplayName="Insert servicios" ExistingDbConnection="[databaseConnectionWWM]" sap:VirtualizedContainerService.HintSize="518,116" sap2010:WorkflowViewState.IdRef="InsertDataTable_6" TableName="pacientes" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="518,122" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Fin de consulta contra BD&quot;]" />
   </Sequence>
 </Activity>

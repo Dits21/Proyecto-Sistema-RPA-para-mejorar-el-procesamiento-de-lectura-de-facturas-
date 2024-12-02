@@ -13,7 +13,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1317,5995</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1317,6145</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>excel_a_json_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="46">
@@ -116,7 +116,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Alineador de facturas" sap:VirtualizedContainerService.HintSize="1327,5930" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Alineador de facturas" sap:VirtualizedContainerService.HintSize="1327,6080" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strImagenFInal" />
       <Variable x:TypeArguments="x:String" Name="strPDFaJPGFinalRoute" />
@@ -206,7 +206,7 @@
                   <InArgument x:TypeArguments="x:String">[Config("RutaFallidos").ToString]</InArgument>
                 </Assign.Value>
               </Assign>
-              <Assign sap:VirtualizedContainerService.HintSize="434,61" sap2010:WorkflowViewState.IdRef="Assign_53">
+              <Assign sap:VirtualizedContainerService.HintSize="434,88" sap2010:WorkflowViewState.IdRef="Assign_53">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[strStatus]</OutArgument>
                 </Assign.To>
@@ -266,7 +266,7 @@
         <InArgument x:TypeArguments="x:Int32">0</InArgument>
       </Assign.Value>
     </Assign>
-    <Sequence DisplayName="clasificador" sap:VirtualizedContainerService.HintSize="1279,4769" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="clasificador" sap:VirtualizedContainerService.HintSize="1279,4919" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -708,13 +708,13 @@
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ui:BusinessRuleException" Name="exception" />
                   </ActivityAction.Argument>
-                  <Sequence sap:VirtualizedContainerService.HintSize="580,1821" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                  <Sequence sap:VirtualizedContainerService.HintSize="580,2018" sap2010:WorkflowViewState.IdRef="Sequence_44">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence sap:VirtualizedContainerService.HintSize="532,1727" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                    <Sequence sap:VirtualizedContainerService.HintSize="532,1924" sap2010:WorkflowViewState.IdRef="Sequence_43">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:String" Name="Message" />
                       </Sequence.Variables>
@@ -724,7 +724,7 @@
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Assign sap:VirtualizedContainerService.HintSize="484,61" sap2010:WorkflowViewState.IdRef="Assign_49">
+                      <Assign sap:VirtualizedContainerService.HintSize="484,88" sap2010:WorkflowViewState.IdRef="Assign_49">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[Message]</OutArgument>
                         </Assign.To>
@@ -732,15 +732,15 @@
                           <InArgument x:TypeArguments="x:String">[exception.Message]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <If Condition="[Message.Equals(&quot;Salida con Campos vacios envio a fallido&quot;)]" sap:VirtualizedContainerService.HintSize="484,415" sap2010:WorkflowViewState.IdRef="If_16">
+                      <If Condition="[Message.Equals(&quot;Salida con Campos vacios envio a fallido&quot;)]" sap:VirtualizedContainerService.HintSize="484,414" sap2010:WorkflowViewState.IdRef="If_16">
                         <If.Then>
-                          <Sequence sap:VirtualizedContainerService.HintSize="441,225" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                          <Sequence sap:VirtualizedContainerService.HintSize="427,212" sap2010:WorkflowViewState.IdRef="Sequence_55">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke llenado exceles workflow" sap:VirtualizedContainerService.HintSize="379,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_18" UnSafe="False" WorkflowFileName="backend\manipulacion de data excel\llenado exceles.xaml">
+                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke llenado exceles workflow" sap:VirtualizedContainerService.HintSize="379,118" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_18" UnSafe="False" WorkflowFileName="backend\manipulacion de data excel\llenado exceles.xaml">
                               <ui:InvokeWorkflowFile.Arguments>
                                 <InArgument x:TypeArguments="sd:DataTable" x:Key="in_DtDataTable">[dtLineas]</InArgument>
                                 <InArgument x:TypeArguments="x:String" x:Key="In_Str_RutaPlantilla">[Config("rutaFinalReporteErrores").ToString]</InArgument>
@@ -760,7 +760,7 @@
                           </Sequence>
                         </If.Else>
                       </If>
-                      <Assign sap:VirtualizedContainerService.HintSize="484,61" sap2010:WorkflowViewState.IdRef="Assign_39">
+                      <Assign sap:VirtualizedContainerService.HintSize="484,88" sap2010:WorkflowViewState.IdRef="Assign_39">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[strFactura]</OutArgument>
                         </Assign.To>
@@ -768,7 +768,7 @@
                           <InArgument x:TypeArguments="x:String">[Path.GetFileName(strPDFaJPGFinalRoute)]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <Assign sap:VirtualizedContainerService.HintSize="484,61" sap2010:WorkflowViewState.IdRef="Assign_40">
+                      <Assign sap:VirtualizedContainerService.HintSize="484,88" sap2010:WorkflowViewState.IdRef="Assign_40">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[strRuta]</OutArgument>
                         </Assign.To>
@@ -776,7 +776,7 @@
                           <InArgument x:TypeArguments="x:String">[Config("RutaFallidos").ToString]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <Assign sap:VirtualizedContainerService.HintSize="484,61" sap2010:WorkflowViewState.IdRef="Assign_41">
+                      <Assign sap:VirtualizedContainerService.HintSize="484,88" sap2010:WorkflowViewState.IdRef="Assign_41">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[strStatus]</OutArgument>
                         </Assign.To>
@@ -784,7 +784,7 @@
                           <InArgument x:TypeArguments="x:String">Bussines</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <Assign sap:VirtualizedContainerService.HintSize="484,61" sap2010:WorkflowViewState.IdRef="Assign_42">
+                      <Assign sap:VirtualizedContainerService.HintSize="484,88" sap2010:WorkflowViewState.IdRef="Assign_42">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[strDescripcion]</OutArgument>
                         </Assign.To>
@@ -792,9 +792,9 @@
                           <InArgument x:TypeArguments="x:String">[exception.Message]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="484,294" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="484,341" sap2010:WorkflowViewState.IdRef="TryCatch_6">
                         <TryCatch.Try>
-                          <Assign sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="Assign_48">
+                          <Assign sap:VirtualizedContainerService.HintSize="434,88" sap2010:WorkflowViewState.IdRef="Assign_48">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:String">[pacienaccount]</OutArgument>
                             </Assign.To>
@@ -804,7 +804,7 @@
                           </Assign>
                         </TryCatch.Try>
                         <TryCatch.Catches>
-                          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,22" sap2010:WorkflowViewState.IdRef="Catch`1_6">
+                          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="438,26" sap2010:WorkflowViewState.IdRef="Catch`1_6">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -820,14 +820,14 @@
                           </Catch>
                         </TryCatch.Catches>
                       </TryCatch>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke mover factura workflow" sap:VirtualizedContainerService.HintSize="484,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="backend\mover factura.xaml">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke mover factura workflow" sap:VirtualizedContainerService.HintSize="484,118" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="backend\mover factura.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
                           <InArgument x:TypeArguments="x:String" x:Key="in_strRutaArchivoIncial">[Path.Combine(Config("rutaTemp").ToString, strFactura)]</InArgument>
                           <InArgument x:TypeArguments="x:String" x:Key="in_strRutaArchivoFinal">[Config("RutaFallidos").ToString]</InArgument>
                           <InArgument x:TypeArguments="x:String" x:Key="in_NombreFinal">[strImagenFInal]</InArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                       </ui:InvokeWorkflowFile>
-                      <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{strImagenFInal,strRuta,strStatus,strDescripcion}]" DataTable="[io_dtReporte]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="484,189" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
+                      <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{strImagenFInal,strRuta,strStatus,strDescripcion}]" DataTable="[io_dtReporte]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="484,201" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
                       <ui:Continue sap:VirtualizedContainerService.HintSize="484,25" sap2010:WorkflowViewState.IdRef="Continue_4" />
                     </Sequence>
                   </Sequence>
@@ -844,7 +844,7 @@
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                   </ActivityAction.Argument>
-                  <Sequence sap:VirtualizedContainerService.HintSize="482,986" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                  <Sequence sap:VirtualizedContainerService.HintSize="482,1071" sap2010:WorkflowViewState.IdRef="Sequence_46">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -883,23 +883,23 @@
                         <InArgument x:TypeArguments="x:String">[exception.Message]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke mover factura workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="backend\mover factura.xaml">
+                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke mover factura workflow" sap:VirtualizedContainerService.HintSize="434,118" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="backend\mover factura.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
                         <InArgument x:TypeArguments="x:String" x:Key="in_strRutaArchivoIncial">[Path.Combine(Config("rutaTemp").ToString, strFactura)]</InArgument>
                         <InArgument x:TypeArguments="x:String" x:Key="in_strRutaArchivoFinal">[Config("RutaFallidos").ToString]</InArgument>
                         <InArgument x:TypeArguments="x:String" x:Key="in_NombreFinal">[strImagenFInal]</InArgument>
                       </ui:InvokeWorkflowFile.Arguments>
                     </ui:InvokeWorkflowFile>
-                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{strImagenFInal,strRuta,strStatus,strDescripcion}]" DataTable="[io_dtReporte]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="AddDataRow_4" />
-                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{strImagenFInal,strRuta,strStatus,strDescripcion}]" DataTable="[io_dtReporte]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="434,201" sap2010:WorkflowViewState.IdRef="AddDataRow_4" />
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="CommentOut_2">
                       <ui:CommentOut.Body>
-                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="242,114" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,119" sap2010:WorkflowViewState.IdRef="Sequence_45">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Throw Exception="[new BusinessRuleException(&quot;error no controlado, explicacion: &quot;+exception.Message)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_3" />
+                          <Throw Exception="[new BusinessRuleException(&quot;error no controlado, explicacion: &quot;+exception.Message)]" sap:VirtualizedContainerService.HintSize="368,25" sap2010:WorkflowViewState.IdRef="Throw_3" />
                         </Sequence>
                       </ui:CommentOut.Body>
                       <sap:WorkflowViewStateService.ViewState>
@@ -909,7 +909,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:CommentOut>
-                    <ui:Continue sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Continue_3" />
+                    <ui:Continue sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="Continue_3" />
                   </Sequence>
                 </ActivityAction>
               </Catch>
@@ -917,6 +917,11 @@
           </TryCatch>
         </ui:InterruptibleDoWhile.Body>
       </ui:InterruptibleDoWhile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Update DB workflow" sap:VirtualizedContainerService.HintSize="1231,118" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_28" UnSafe="False" WorkflowFileName="backend\DB\Update DB.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke mover factura Final workflow" sap:VirtualizedContainerService.HintSize="1231,118" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="backend\mover factura Final.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <InArgument x:TypeArguments="x:String" x:Key="in_strRutaArchivoIncial">[in_TransactionItem("RutaFactura").ToString]</InArgument>
